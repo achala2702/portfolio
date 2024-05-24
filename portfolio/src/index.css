@@ -14,3 +14,7 @@
   .closed {
     transform: rotate(180deg);
   }
+
+  .active {
+    color: #623288;
+  }

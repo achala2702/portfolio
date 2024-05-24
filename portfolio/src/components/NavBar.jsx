@@ -4,12 +4,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
-    const active_link = "text-customActive";
-    const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(true);
 
     useEffect(() => {
@@ -49,10 +47,10 @@ const NavBar = () => {
         </div>
         <div className="pt-5 flex-grow">
             <ul className="flex flex-col gap-4">
-            <li><Link to="/" className={`max-[760px]:text-2xl text-4xl md:text-3xl xl:text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text ${location.pathname === "/" ? active_link : ""}`}>Home</Link></li>
-            <li><Link to="/about" className={`max-[760px]:text-2xl md:text-3xl xl:text-4xl text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text ${location.pathname === "/about" ? active_link : ""}`}>About</Link></li>
-            <li><Link to="/work" className={`max-[760px]:text-2xl md:text-3xl xl:text-4xl text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text ${location.pathname === "/work" ? active_link : ""}`}>Work</Link></li>
-            <li><Link to="/contact" className={`max-[760px]:text-2xl md:text-3xl xl:text-4xl text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text ${location.pathname === "/contact" ? active_link: ""}`}>Contact</Link></li>
+            <li><NavLink to="/" className={`max-[760px]:text-2xl text-4xl md:text-3xl xl:text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text`}>Home</NavLink></li>
+            <li><NavLink to="/about" className={`max-[760px]:text-2xl md:text-3xl xl:text-4xl text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text`}>About</NavLink></li>
+            <li><NavLink to="/work" className={`max-[760px]:text-2xl md:text-3xl xl:text-4xl text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text`}>Work</NavLink></li>
+            <li><NavLink to="/contact" className={`max-[760px]:text-2xl md:text-3xl xl:text-4xl text-4xl font-semibold text-white hover:text-transparent bg-gradient-to-b from-customBlue to-customPurple text-transparent bg-clip-text`}>Contact</NavLink></li>
             </ul>
         </div>
         <p className="text-white bottom-4">Copyright 2024</p>

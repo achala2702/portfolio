@@ -9,7 +9,8 @@ export default {
       colors: {
         customBlue: '#48329C',
         customPurple: '#87329C',
-        customCol_3: '#623288'
+        customCol_3: '#623288',
+        customCol_4: "#A862DE"
       }
     },
   },

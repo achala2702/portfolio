@@ -96,7 +96,7 @@ url:MongoDB}]
             isClicked === "work-1" ? "animate-clickOpacity" : ""
           }`}
         >
-          <span>6+</span>
+          <span>3+</span>
           <span className="md:text-3xl lg:text-4xl max-[760px]:text-xl">
             Certificates
           </span>

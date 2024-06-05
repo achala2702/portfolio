@@ -30,7 +30,7 @@ function App() {
         /></div>:
         <div className="flex">
         <NavBar />
-        <div className="flex-grow ml-[20%] md:ml-[25%] lg:ml-[20%] max-[760px]:ml-0 overflow-y-scroll">
+        <div className="flex-grow ml-[20%] md:ml-[25%] lg:ml-[20%] max-[760px]:ml-0">
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>

@@ -9,6 +9,10 @@
   font-weight: 350;
   font-style: normal;
 }
+#root {
+  width: 100%;
+  overflow: hidden;
+}
 
 /*animation for menu icon*/
 .open, .closed {

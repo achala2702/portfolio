@@ -4,6 +4,23 @@ import certificate_2 from "../../assets/images/js_certificate.png";
 import certificate_3 from "../../assets/images/frontend_libraries_certificate.png";
 
 const About = () => {
+  const certifications = [
+    {
+      name: "Responsive Web Designing Certificate",
+      url: certificate_1,
+      link: "https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/responsive-web-design",
+    },
+    {
+      name: "JavaScript Certificate",
+      url: certificate_2,
+      link: "https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/javascript-algorithms-and-data-structures-v8",
+    },
+    {
+      name: "Frontend Libraries Certificate",
+      url: certificate_3,
+      link: "https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/front-end-development-libraries",
+    },
+  ];
   return (
     <div className="min-h-screen bg-[radial-gradient(circle,_#48329C,_#1C1A1A)] roboto-slab-new p-4">
       <div className=" h-auto p-8 bg-black rounded-lg ">
@@ -21,28 +38,20 @@ const About = () => {
       </div>
       <div className="bg-black rounded-lg p-1 my-4">
         <h1 className="text-customCol_3 my-auto mx-auto text-4xl text-center mb-4 font-semibold max-[760px]:text-3xl">
-          Certifications
+          !Certifications
         </h1>
       </div>
       <div className="grid max-[767px]:grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-black rounded-lg p-6">
-          <a href="https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/responsive-web-design">
-            <img
-              src={certificate_1}
-              alt="Responsive Web Designing Certificate"
-            />
-          </a>
-        </div>
-        <div className="bg-black rounded-lg p-6">
-          <a href="https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/javascript-algorithms-and-data-structures-v8">
-            <img src={certificate_2} alt="JavaScript Certificate" />
-          </a>
-        </div>
-        <div className="bg-black rounded-lg p-6">
-          <a href="https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/front-end-development-libraries">
-            <img src={certificate_3} alt="Frontend Libraries Certificate" />
-          </a>
-        </div>
+        {certifications.map((certificate, index) => (
+          <div
+            key={index}
+            className="bg-black rounded-lg p-6 transition transform active:scale-90 hover:opacity-70"
+          >
+            <a href={certificate.link}>
+              <img src={certificate.url} alt={certificate.name} />
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );

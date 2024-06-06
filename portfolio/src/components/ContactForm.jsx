@@ -60,7 +60,7 @@ const ContactForm = () => {
         <section className="flex items-center justify-center col-span-2">
           <button
             type="submit"
-            className="border-2 border-black p-4 max-[767px]:mt-4 bg-gradient-to-b text-black rounded-lg from-customBlue to-customPurple hover:bg-black hover:text-white max-[767px]:p-2 max-[767px]:text-sm md:py-2 lg:py-4 w-40 px-auto md:mt-4 col-span-2 lg:text-lg"
+            className="border-2 border-black p-4 max-[767px]:mt-4 bg-gradient-to-b text-black rounded-lg from-customBlue to-customPurple hover:bg-black hover:text-white max-[767px]:p-2 max-[767px]:text-sm md:py-2 lg:py-4 w-40 px-auto md:mt-4 col-span-2 lg:text-lg transition transform active:scale-90"
           >
             Send
           </button>

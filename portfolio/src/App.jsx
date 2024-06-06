@@ -28,7 +28,7 @@ function App() {
           aria-label="Loading Spinner"
           data-testid="loader"
         /></div>:
-        <div className="flex">
+        <div className="flex roboto-slab-new">
         <NavBar />
         <div className="flex-grow ml-[20%] md:ml-[25%] lg:ml-[20%] max-[760px]:ml-0">
           <Routes>

@@ -52,11 +52,11 @@ url:MySQL},
 url:MongoDB}]
 
   return (
-    <div className="min-h-screen flex flex-col bg-[radial-gradient(circle,_#48329C,_#1C1A1A)] text-purple-200 max-[760px]:pt-5 roboto-slab-new">
-      <div className="h-auto grid max-[760px]:grid-cols-2 md:grid-cols-3 mt-4 mx-4 gap-4">
+    <div className="min-h-screen flex flex-col bg-[radial-gradient(circle,_#48329C,_#1C1A1A)] text-purple-200 max-[760px]:pt-5">
+      <div className="h-auto grid grid-cols-2 lg:grid-cols-3 mt-4 mx-4 gap-4">
         <Link
           onClick={handleClick("about")}
-          className={`md:col-span-2 max-[760px]:col-span-2 p-4 hover:text-customCol_3 flex flex-col text-center rounded-lg bg-black text-2xl ${
+          className={`col-span-2 p-4 hover:text-customCol_3 flex flex-col text-center rounded-lg bg-black text-2xl ${
             isClicked === "about" ? "animate-clickOpacity" : ""
           }`}
         >
@@ -86,14 +86,14 @@ url:MongoDB}]
             isClicked === "work" ? "animate-clickOpacity" : ""
           }`}
         >
-          <span>100+</span>
+          <span>5+</span>
           <span className="text-4xl max-[760px]:text-xl">Projects</span>
         </Link>
 
         <Link
-          onClick={handleClick("work-1")}
+          onClick={handleClick("about-1")}
           className={`hover:text-customCol_3 p-4 cursor-pointer flex flex-col justify-center items-center rounded-lg bg-black md:text-6xl lg:text-8xlfont-bold max-[760px]:text-5xl ${
-            isClicked === "work-1" ? "animate-clickOpacity" : ""
+            isClicked === "about-1" ? "animate-clickOpacity" : ""
           }`}
         >
           <span>3+</span>
@@ -101,23 +101,24 @@ url:MongoDB}]
             Certificates
           </span>
         </Link>
-        <Link
-          onClick={handleClick("about-1")}
-          className={` md:col-span-2 max-[760px]:col-span-2 hover:text-customCol_3 overflow-hidden p-4 flex flex-col text-center rounded-lg bg-black text-4xl font-medium ${
-            isClicked === "about-1" ? "animate-clickOpacity" : ""
-          }`}
+        <div
+          className={` md:col-span-2 max-[760px]:col-span-2 overflow-hidden p-4 flex flex-col text-center rounded-lg bg-black text-4xl font-medium`}
         >
           <span>Skills</span>
           <div>
 
-          <div className="flex gap-6 ml-4 py-4 flex-wrap max-[760px]:justify-between">
+          <div className="flex gap-6 ml-4 py-4 justify-between flex-wrap xl:justify-center">
             {images.map(({img_name, url})=>(
-              <img key={img_name} className="w-24 max-[760px]:w-14 bg-white text-black rounded-lg" src={url} alt={img_name}/>
+              <div className=" w-24 h-24 max-[767px]:w-14 max-[767px]:h-14">
+                <img key={img_name} className="w-24 h-24 max-[767px]:w-14 max-[767px]:h-14 bg-white text-black rounded-lg" src={url} alt={img_name}/>
+                <p className="text-lg max-[767px]:text-sm">{img_name}</p>
+              </div> 
+
             ))}
           </div>
 
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

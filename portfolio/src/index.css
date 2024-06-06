@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.roboto-slab-new {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+#root {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*animation for menu icon*/
+.open, .closed {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Define classes for open and closed states */
+  .open {
+    transform: rotate(0deg);
+  }
+  
+  .closed {
+    transform: rotate(180deg);
+  }
+
+  .active {
+    color: #623288;
+  }
+/*animation for clickable icons in home*/
+  @keyframes clickOpacity {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .animate-clickOpacity {
+    animation: clickOpacity 0.2s ease-in-out;
+  }
+
+  /*aniamtion for skills div icons*/
+  .animate_items {
+    animation: travelingAnimation 20s linear infinite;
+  }
+
+  @layer utilities {
+    .mask-linear-gradient {
+      mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+    }
+  }
+  @keyframes travelingAnimation{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+  }
+  html {
+    height: 100vh;
+  }
+  body {
+    height: 100vh;
+  }
+  
+

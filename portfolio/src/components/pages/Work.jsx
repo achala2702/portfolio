@@ -30,6 +30,7 @@ const Work = () => {
       url: project6,
       technology: "React / MongoDB / Express JS / Tailwind CSS",
       description: "A simple book store website allow users show, delete, & create books",
+      link: "https://main--mern-book-store-project.netlify.app/",
       github_link:"https://github.com/achala2702/MERN_book_store"
     },
     {

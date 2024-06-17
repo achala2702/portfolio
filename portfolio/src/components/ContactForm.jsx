@@ -1,8 +1,46 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [errorMsg, setError] = useState(false);
   const [succes, setSucces] = useState(false);
+
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  //submitting the contact form
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams ={
+      firstName: fName,
+      lastName: lName,
+      message: message,
+      email: email,
+      reply_to: email,
+      };
+
+    emailjs.send(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_PUBLIC_KEY
+    ).then(()=>{
+      setSucces(true)
+    }).catch(()=>{
+      setError(true)
+    });
+
+    setFName("");
+    setLName("");
+    setEmail("");
+    setMessage("");
+    setError(false);
+    setSucces(false);
+  };
+
   return (
     <div className="flex flex-col bg-black text-purple-300 items-center mx-2 justify-center lg:w-11/12 py-4 pb-12 rounded-lg lg:px-20 px-10">
       <h1 className="xl:text-4xl text-customCol_3 lg:text-3xl font-semibold xl:mt-8 xl:mb-8 max-[767px]:text-xl max-[767px]:mt-4 max-[767px]:mb-2 md:text-2xl lg:mb-4 ">
@@ -16,6 +54,7 @@ const ContactForm = () => {
       <form
         autoComplete="off"
         className="grid w-full md:grid-cols-2 gap-6 xl:text-2xl lg:text-xl max-[767px]:text-sm max-[767px]:px-4 md:text-sm max-[767px]:mt-8 lg:mt-10"
+        onSubmit={handleSubmit}
       >
         <section className="flex gap-3 max-[767px]:col-span-2 flex-col md:mr-8">
           <label htmlFor="fName">First Name:</label>
@@ -24,6 +63,10 @@ const ContactForm = () => {
             type="text"
             id="fName"
             name="fname"
+            value={fName}
+            onChange={(e) => {
+              setFName(e.target.value);
+            }}
             required
           />
         </section>
@@ -34,6 +77,10 @@ const ContactForm = () => {
             type="text"
             id="lName"
             name="lname"
+            value={lName}
+            onChange={(e) => {
+              setLName(e.target.value);
+            }}
             required
           />
         </section>
@@ -44,6 +91,10 @@ const ContactForm = () => {
             type="email"
             id="eMail"
             name="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
             required
           />
         </section>
@@ -54,6 +105,10 @@ const ContactForm = () => {
             rows={4}
             name="message"
             id="message"
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
             required
           />
         </section>

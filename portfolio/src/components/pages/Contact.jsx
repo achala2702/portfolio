@@ -20,7 +20,7 @@ const Contact = () => {
             Thalangama North,<span>Malabe</span>
           </p>
         </section>
-        <section className="flex flex-col items-center rounded-lg justify-center bg-black p-8">
+        <a href="mailto:achala2702@gmail.com" className="flex flex-col items-center rounded-lg justify-center bg-black p-8">
           <MailIcon
             sx={{
               fontSize: { xs: "6rem", md: "4rem", xl: "10rem" },
@@ -30,7 +30,7 @@ const Contact = () => {
           <p className="mt-4 flex flex-wrap">
             achala2702@<span>gmail.com</span>
           </p>
-        </section>
+        </a>
         <section className="flex flex-col items-center rounded-lg justify-center bg-black p-8">
           <PhoneIcon
             sx={{
@@ -46,9 +46,9 @@ const Contact = () => {
         className="w-full h-full rounded-lg shadow-md"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d803.3107357904566!2d79.95570863116355!3d6.906809993142428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2572ee457d0d7%3A0x6681f5b32466c96b!2sRanaviru%20Mawatha%2C%20Malabe!5e0!3m2!1sen!2slk!4v1717659561333!5m2!1sen!2slk"
           style={{ border: "0" }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

@@ -13,9 +13,9 @@ const Work = () => {
     {
       title: "Website for a Accountant",
       url: project5,
-      technology: "React / Tailwind CSS",
+      technology: "React / Express JS /MySQL / Tailwind CSS",
       description: "A resposive website created for an Accountant accoriding to his needs",
-      link:"#"
+      link:"https://ptt-accounting.netlify.app/"
     },
     {
       title: "Portfolio",

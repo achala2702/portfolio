@@ -13,16 +13,16 @@ const Work = () => {
     {
       title: "Website for a Accountant",
       url: project5,
-      technology: "React / Tailwind CSS",
+      technology: "React / Express JS /MySQL / Tailwind CSS",
       description: "A resposive website created for an Accountant accoriding to his needs",
-      link:"#"
+      link:"https://ptt-accounting.netlify.app/"
     },
     {
       title: "Portfolio",
       url: project4,
       technology: "React / Tailwind CSS",
       description: "A responsive portfolio created for my self",
-      link:"#",
+      link:"https://achala-nipun.netlify.app/",
       github_link: "https://github.com/achala2702/portfolio"
     },
     {

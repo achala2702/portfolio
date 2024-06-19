@@ -56,7 +56,7 @@ const NavBar = () => {
           />
         </div>
         <div className=" flex gap-4 my-4 md:gap-2 lg:gap-4 xl:gap-6 xl:my-6">
-          <a href="#">
+          <a href="https://www.instagram.com/achala__nipun/">
             <InstagramIcon
               sx={{
                 color: "#E9D5FF",
@@ -65,7 +65,7 @@ const NavBar = () => {
               }}
             />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/achala-nipun/">
             <LinkedInIcon
               sx={{
                 color: "#E9D5FF",
@@ -74,7 +74,7 @@ const NavBar = () => {
               }}
             />
           </a>
-          <a href="#">
+          <a href="https://github.com/achala2702">
             <GitHubIcon
               sx={{
                 color: "#E9D5FF",

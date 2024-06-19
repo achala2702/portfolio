@@ -22,7 +22,7 @@ const Work = () => {
       url: project4,
       technology: "React / Tailwind CSS",
       description: "A responsive portfolio created for my self",
-      link:"#",
+      link:"https://achala-nipun.netlify.app/",
       github_link: "https://github.com/achala2702/portfolio"
     },
     {

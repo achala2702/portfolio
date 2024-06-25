@@ -2,6 +2,7 @@ import React from "react";
 import certificate_1 from "../../assets/images/web_development_certificate.png";
 import certificate_2 from "../../assets/images/js_certificate.png";
 import certificate_3 from "../../assets/images/frontend_libraries_certificate.png";
+import certificate_4 from "../../assets/images/backend_development_certificate.png";
 
 const About = () => {
   const certifications = [
@@ -20,6 +21,11 @@ const About = () => {
       url: certificate_3,
       link: "https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/front-end-development-libraries",
     },
+    {
+      name: "Backend Development and APIs Certificate",
+      url: certificate_4,
+      link: "https://www.freecodecamp.org/certification/fcce8b4335d-c630-4643-b1a9-f31286e12f0f/back-end-development-and-apis",
+    }
   ];
   return (
     <div className="min-h-screen bg-[radial-gradient(circle,_#48329C,_#1C1A1A)] roboto-slab-new p-4">
@@ -41,7 +47,7 @@ const About = () => {
           !Certifications
         </h1>
       </div>
-      <div className="grid max-[767px]:grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid max-[767px]:grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-4">
         {certifications.map((certificate, index) => (
           <div
             key={index}

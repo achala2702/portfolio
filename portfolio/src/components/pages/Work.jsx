@@ -23,7 +23,8 @@ const Work = () => {
       url: project7,
       technology: "React / Express JS /Mongo DB / Stripe/ Tailwind CSS",
       description: "A simple E-commerce website where users can buy electronic product. thsi website contains an admin panel by which admins can add, edit and delete product details",
-      link:"https://achalatechstore.netlify.app/"
+      link:"https://achalatechstore.netlify.app/",
+      github_link:"https://github.com/achala2702/Tech_Store"
     },
     {
       title: "Portfolio",

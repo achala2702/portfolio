@@ -5,6 +5,7 @@ import project3 from "../../assets/images/project3.png";
 import project4 from "../../assets/images/project4.png";
 import project5 from "../../assets/images/project5.png";
 import project6 from "../../assets/images/project6.png";
+import project7 from "../../assets/images/project7.png";
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -16,6 +17,13 @@ const Work = () => {
       technology: "React / Express JS /MySQL / Tailwind CSS",
       description: "A resposive website created for an Accountant accoriding to his needs",
       link:"https://pttaccounting.com.au/"
+    },
+    {
+      title: "Tech Store",
+      url: project7,
+      technology: "React / Express JS /Mongo DB / Stripe/ Tailwind CSS",
+      description: "A simple E-commerce website where users can buy electronic product. thsi website contains an admin panel by which admins can add, edit and delete product details",
+      link:"https://achalatechstore.netlify.app/"
     },
     {
       title: "Portfolio",

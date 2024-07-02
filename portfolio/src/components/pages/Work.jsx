@@ -6,6 +6,7 @@ import project4 from "../../assets/images/project4.png";
 import project5 from "../../assets/images/project5.png";
 import project6 from "../../assets/images/project6.png";
 import project7 from "../../assets/images/project7.png";
+import project8 from "../../assets/images/project8.png";
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -23,7 +24,6 @@ const Work = () => {
       url: project7,
       technology: "React / Express JS /Mongo DB / Stripe/ Tailwind CSS",
       description: "A simple E-commerce website where users can buy electronic product. thsi website contains an admin panel by which admins can add, edit and delete product details",
-      link:"https://achalatechstore.netlify.app/",
       github_link:"https://github.com/achala2702/Tech_Store"
     },
     {
@@ -35,11 +35,17 @@ const Work = () => {
       github_link: "https://github.com/achala2702/portfolio"
     },
     {
+      title: "Shoping Manager",
+      url: project8,
+      technology: "JAVA / jAVA Swing ",
+      description: "A simple shoping manager application by which users can buy the items which are on stock and manager can add / remove products",
+      github_link:"https://github.com/achala2702/shoping_manager"
+    },
+    {
       title: "Book Store website",
       url: project6,
       technology: "React / MongoDB / Express JS / Tailwind CSS",
       description: "A simple book store website allow users show, delete, & create books",
-      link: "https://main--mern-book-store-project.netlify.app/",
       github_link:"https://github.com/achala2702/MERN_book_store"
     },
     {

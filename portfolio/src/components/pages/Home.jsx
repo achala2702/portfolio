@@ -86,7 +86,7 @@ url:MongoDB}]
             isClicked === "work" ? "animate-clickOpacity" : ""
           }`}
         >
-          <span>6+</span>
+          <span>4+</span>
           <span className="text-4xl max-[760px]:text-xl">Projects</span>
         </Link>
 

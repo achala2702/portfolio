@@ -11,6 +11,7 @@ import MySQL from "../../assets/images/MySQL.png";
 import NodeJS from "../../assets/images/NodeJS.png";
 import Python from "../../assets/images/Python.png";
 import react from "../../assets/images/React.png";
+import SpringBoot from "../../assets/images/springboot.png";
 const Home = () => {
 
   //for typewritter animation
@@ -42,6 +43,8 @@ url:JS},
 url:react},
 {img_name: "Node JS",
 url:NodeJS},
+{img_name: "Spring",
+url:SpringBoot},
 {img_name: "JAVA",
 url:Java},
 {img_name: "Python",

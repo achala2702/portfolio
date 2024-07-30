@@ -1,7 +1,4 @@
 import React from "react";
-import project1 from "../../assets/images/project1.png";
-import project2 from "../../assets/images/project2.png";
-import project3 from "../../assets/images/project3.png";
 import project4 from "../../assets/images/project4.png";
 import project5 from "../../assets/images/project5.png";
 import project6 from "../../assets/images/project6.png";
@@ -23,7 +20,7 @@ const Work = () => {
       title: "Tech Store",
       url: project7,
       technology: "React / Express JS /Mongo DB / Stripe/ Tailwind CSS",
-      description: "A simple E-commerce website where users can buy electronic product. thsi website contains an admin panel by which admins can add, edit and delete product details",
+      description: "Responsive E-commerce website where users can buy electronic product. thsi website contains an admin panel by which admins can add, edit and delete product details",
       github_link:"https://github.com/achala2702/Tech_Store"
     },
     {
@@ -35,39 +32,19 @@ const Work = () => {
       github_link: "https://github.com/achala2702/portfolio"
     },
     {
+      title: "PopCorn-Movie Website",
+      url: project6,
+      technology: "React / Spring Boot / MongoDB / Tailwind CSS",
+      description: "Responsive website where users can browse for movies, watch trailers and add reviews for their favorite movies",
+      github_link:"https://github.com/achala2702/movies_app"
+    },
+    
+    {
       title: "Shoping Manager",
       url: project8,
       technology: "JAVA / jAVA Swing ",
       description: "A simple shoping manager application by which users can buy the items which are on stock and manager can add / remove products",
       github_link:"https://github.com/achala2702/shoping_manager"
-    },
-    {
-      title: "Book Store website",
-      url: project6,
-      technology: "React / MongoDB / Express JS / Tailwind CSS",
-      description: "A simple book store website allow users show, delete, & create books",
-      github_link:"https://github.com/achala2702/MERN_book_store"
-    },
-    {
-      title: "Calculator",
-      url: project3,
-      technology: "React / Tailwind CSS",
-      description: "Simple JavaScript Calculator",
-      link:"https://codepen.io/achala2702/pen/MWdJveR"
-    },
-    {
-      title: "Pomodoro Clock",
-      url: project2,
-      technology: "React / Tailwind CSS",
-      description: "Simple pomodoro clock",
-      link:"https://codepen.io/achala2702/pen/PovmRzM"
-    },
-    {
-      title: "Random-Quote Machine",
-      url: project1,
-      technology: "React / Tailwind CSS",
-      description: "Simple Quote machine which display quotes getting from a api endpoint",
-      link:"https://codepen.io/achala2702/pen/xxNVLbp"
     },
   ];
 
